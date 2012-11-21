@@ -1,8 +1,8 @@
 #!/bin/bash
 
 build() {
-    add_module "nbd"
-    add_binary "nbd-client"
+    add_module nbd
+    add_binary nbd-client /usr/bin/@nbd-client
     add_runscript
 }
 
@@ -24,7 +24,7 @@ Kernel Parameters:
 	   This parameter is required.
 
 <nbd_port> The port on which nbd-server is running. This parameter
-	   is only required if nbd-server is not runinng on the 
+	   is only required if nbd-server is not running on the 
 	   default port (10809).
 
 Also make sure that you set 'root=/dev/nbd0' and the 'ip' parameter
