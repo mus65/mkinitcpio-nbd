@@ -1,15 +1,13 @@
 VERSION	  = $(shell git describe)
-DISTFILES = Makefile nbd_install nbd_hook omit_kill_nbd
+DISTFILES = Makefile nbd_install nbd_hook
 
 install:
 	install -m 644 -D nbd_install $(DESTDIR)/usr/lib/initcpio/install/nbd
 	install -m 644 -D nbd_hook $(DESTDIR)/usr/lib/initcpio/hooks/nbd
-	install -m 644 -D omit_kill_nbd $(DESTDIR)/etc/rc.d/functions.d/omit_kill_nbd
 
 uninstall:
 	$(RM) $(DESTDIR)/usr/lib/initcpio/install/nbd
 	$(RM) $(DESTDIR)/usr/lib/initcpio/hooks/nbd
-	$(RM) $(DESTDIR)/etc/rc.d/functions.d/omit_kill_nbd
 
 dist:
 	mkdir mkinitcpio-nbd-$(VERSION)
