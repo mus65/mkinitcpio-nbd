@@ -2,6 +2,6 @@ mkinitcpio hook to boot from a Network Block Device (NBD)
 
 http://nbd.sourceforge.net/
 
-https://wiki.archlinux.org/index.php/Network_Installation_Guide
+https://wiki.archlinux.org/index.php/Diskless_System
 
 https://aur.archlinux.org/packages/mkinitcpio-nbd/
