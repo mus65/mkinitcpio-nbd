@@ -33,7 +33,7 @@ Your hook list may then look like this:
 HOOKS="base udev net nbd filesystems"
 
 If your NBD device is encrypted, set 'cryptdevice=/dev/nbd0:nbdcrypt' and
-'root=/dev/mapper/nbdcrypt'. You also will have to add the hooks 'usbinput',
+'root=/dev/mapper/nbdcrypt'. You also will have to add the hooks 'keyboard',
 'keymap' and 'encrypt' to your hook list after the 'net' and 'nbd' hooks.
 Your hook list may then look like this:
 HOOKS="base udev net nbd keyboard keymap encrypt filesystems"
