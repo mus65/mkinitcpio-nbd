@@ -11,6 +11,6 @@ run_hook() {
 		msg "loading module..."
 		modprobe nbd
 		msg "connecting..."
-		@nbd-client ${nbd_host} ${nbd_port} /dev/nbd0 -persist -name ${nbd_name}
+		nbd-client -m ${nbd_host} ${nbd_port} /dev/nbd0 -persist -name ${nbd_name}
 	fi
 }

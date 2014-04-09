@@ -2,7 +2,7 @@
 
 build() {
     add_module nbd
-    add_binary nbd-client /usr/bin/@nbd-client
+    add_binary nbd-client
     add_runscript
 }
 
